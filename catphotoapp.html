@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+ 
+ <html lang="en"><head><meta charset="utf-8" ><title>CatPhotoApp</title></head>
+<body>
+ <main>
+     <h1> Cat Photo App</h1>
+     <section>
+
+     <h2>Cat photos</h2>
+
+     <!-- This is comments and there is indentation-->
+
+     <p>See more cat photos</p>
+
+     <!-- This following code show how <a></a> attribute is used to make in paragraph text a link-->
+     <p>See more <a href="https://freecatphotoapp.com" target="_blank"> cat photos</a> in our gallery.</p>
+
+     <!-- <a href=link> Text</a>   This help to provide a link to the image within text description-->
+     <!--<a href="https://freecatphotoapp.com">link to cat pictures</a>
+   This part is made comment because this part is no longer needed because we alread
+    have the link to cat photos inside the word "cat photos"-->
+
+     <!-- One Image is mine the other from Free code camp-->
+
+    <a href="https://imgb.srgcdn.com/f012b94b-7c06-4cb8-8407-ce1979c7a9e3.jpg" target="_blank"><img src="https://th.bing.com/th/id/OIP.mTMr6mpWeUm4owbL_DaMtAHaEK?rs=1&pid=ImgDetMain"></a>
+     <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+     <img src="https://3.bp.blogspot.com/-7ABAaAViPyw/W84wG4scmQI/AAAAAAAAFUU/7jbp2CidXKYRRH81GIFOeEa7-D3GabJqgCLcBGAs/s1600/cat.jpg" height="200" alt="A grey cute cat" >
+
+     </section>
+
+     <!-- <section>...</section> element help to separate sections in a document-->
+     <section>
+      <h2> Cat Lists</h2>
+      <h3> Things cat love:</h3>
+
+      <!-- The <ul> </ul> element is used to make a list of ordered or unordered list of items combined with 
+      
+      <li></li>-->
+      <ul>
+         <li>cat nip</li>
+         <li>laser pointers</li>
+         <li>lasagna</li>
+      </ul>
+      <!---<img src="https://www.goodwholefood.com/wp-content/uploads/2015/07/453300-milk.jpg" alt="A cup of milk">-->
+
+      <figure>
+       <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+
+       <!--<figcaption></figcaption> allows to assign a caption to an image the<em></em> element emphisise a word-->
+
+       <figcaption> Cats <em>love</em> lasagna</figcaption>
+
+      </figure>
+
+      <h3>Top 3 things cats hate:</h3>
+      
+
+      <ol>
+         <li>flea treatment</li>
+         <li>thunder</li>
+         <li>other cats</li>
+
+     </ol>
+     <figure><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field">
+
+      <figcaption>Cats <strong>hate</strong> other Cats </figcaption>
+     </figure>
+     
+
+
+
+     </section>
+
+     <!--The Third section-->
+
+     <section>
+
+      <h2>Cat Form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+
+         <!-- <input> attribute is self... -->
+         <!--Placeholder text is used to give people a hint about what kind of information to enter into an input.-->
+
+         
+         <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+
+         <!--o prevent a user from submitting your form when required information is missing,
+             you need to add the required attribute to an input element.
+              There's no need to set a value to the required attribute. Instead,
+               just add the word required to the input element,
+                making sure there is space between it and other attributes.-->
+
+         <!--placeholder tries to show an example of what to fill in the space-->
+
+         <button type="Submit">Submit</button><!--Provide a button to click when u are submitting a form-->
+
+         <!---<legend> Is your cat indoor or outdoor</legend> this is made cooments-->
+         <fieldset>
+            <legend> Is your cat an indoor or outdoor cat?</legend><!--The legend element acts as
+                a caption for the content in the fieldset element.
+                It gives users context about what they should enter into that part of the form-->
+            <label><input checked type="radio" id="Indoor"  name="indoor-outdoor" value="Indoor"> Indoor</label>
+
+         <!--Notice that both radio buttons can be selected at the same time.
+             To make it so selecting one radio button automatically deselects the other,
+              both buttons must have a "name" attribute with the same value.-->
+
+
+              <!--If you select the Indoor radio button and submit the form,
+                the form data for the button is based on its name and value attributes.
+                 Since your radio buttons do not have a value attribute,
+                  the form data will include indoor-outdoor=on,
+                   which is not useful when you have multiple buttons-->
+
+
+
+
+         <label><input id="outdoor" type="radio"  name="indoor-outdoor" value="outdoor"> Outdoor</label></fieldset>
+         <!--label elements are used to help associate the text for an 
+            input element with the input element itself
+             (especially for assistive technologies like screen readers).-->
+
+         <!--The id attribute is used to identify specific HTML elements.
+             Each id attribute's value must be unique from all other id values for the entire page.-->
+
+             <fieldset>
+               <legend>What's your cat's personality?</legend>
+               <!--Forms commonly use checkboxes for questions that may have more than one answer.
+                   The input element with a type attribute set to checkbox creates a checkbox.-->
+
+               <input checked type="checkbox" id="loving" name="personality" value="loving"> <!--Loving remove but "for" attribute
+               help to do that job-->
+               <label for="loving"> Loving </label> 
+               <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
+               <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
+               
+
+
+             </fieldset>
+
+
+
+
+      </form>
+
+
+
+     </section>
+
+
+
+
+
+
+
+
+
+ </main>
+<footer><!--The footer element is used to define a footer for a document or section.
+    A footer typically contains information about the author of the document,
+     copyright data, links to terms of use, contact information, and more.-->
+
+     <p>
+      No Copyright - <a href="https://www.freecodecamp.org"> freeCodeCamp.org</a>
+     </p>
+
+</footer>
+
+
+   
+  
+</body>
+ </html>
